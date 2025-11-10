@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // Ambil data JSON
-    const response = await fetch("download_links.json");
+    const response = await fetch("download_links.json?v=" + Date.now());
     const data = await response.json();
 
     // Cari data berdasarkan id
